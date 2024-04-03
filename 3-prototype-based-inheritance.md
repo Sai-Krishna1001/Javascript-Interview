@@ -29,6 +29,8 @@ Now, if we read a property from rabbit (e.g., rabbit.eats), JavaScript will auto
 ```js
 console.log(rabbit.eats) // Output: true
 ```
+##### This is why in many tutorials you will see String.prototype.split written instead of just String.split. This means that there is a method split that can be used with objects of type string because it is attached to that object’s prototype property.
+
 ### 3.4 Inheritance and Reusability:
 Prototypal inheritance allows us to reuse properties and methods from one object to another.
 
