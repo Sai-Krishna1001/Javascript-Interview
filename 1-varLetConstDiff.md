@@ -1,13 +1,13 @@
 # 1. Difference between var, let and const
 
-In JavaScript, var, let, and const are all used for variable declaration, but they have some key differences and limitations. Here's a breakdown of each with examples:
+* In JavaScript, var, let, and const are all used for variable declaration, but they have some key differences and limitations. Here's a breakdown of each with examples:
 
 ## 1.1 var
 ### Function-scoped: 
-  Variables declared with var are function-scoped. They are visible throughout the function in which they are defined, even if they are declared within a block (e.g., if, for, while).
+  * Variables declared with var are function-scoped. They are visible throughout the function in which they are defined, even if they are declared within a block (e.g., if, for, while).
 
 ### Can be redeclared and reassigned: 
-  Variables declared with var can be redeclared and reassigned within their scope.
+  * Variables declared with var can be redeclared and reassigned within their scope.
 
 ```js
 function example() {
@@ -24,9 +24,9 @@ example();
 
 ## 1.2 let
 ### Block-scoped: 
-  Variables declared with let are block-scoped. They are only visible within the block they're defined in (e.g., if, for, while).
+  * Variables declared with let are block-scoped. They are only visible within the block they're defined in (e.g., if, for, while).
 ### Cannot be redeclared, but can be reassigned: 
-  Variables declared with let cannot be redeclared within the same scope, but they can be reassigned.
+  * Variables declared with let cannot be redeclared within the same scope, but they can be reassigned.
 
 ```js
 let y = 10;
@@ -40,9 +40,9 @@ console.log(y); // Output: 10
 
 ## 1.3 const
 ### Block-scoped: 
-  Like let, variables declared with const are block-scoped.
+*  Like let, variables declared with const are block-scoped.
 ### Cannot be reassigned or redeclared: 
-  Variables declared with const cannot be reassigned or redeclared. However, note that if a const variable holds an object or array, the properties or elements of that object or array can be modified.
+ *  Variables declared with const cannot be reassigned or redeclared. However, note that if a const variable holds an object or array, the properties or elements of that object or array can be modified.
 
 ```js
 const z = 10;
@@ -55,7 +55,7 @@ console.log(obj.key); // Output: 'new value'
 ## 1.4 Limitations of var, let, and const:
 
 ### 1.4.1 Hoisting: 
-All three are hoisted to the top of their containing function or block, but var variables are initialized with undefined, while let and const variables are not initialized until their declaration is evaluated.
+* All three are hoisted to the top of their containing function or block, but var variables are initialized with undefined, while let and const variables are not initialized until their declaration is evaluated.
 
 ```js
 console.log(a); // Output: undefined
@@ -69,7 +69,7 @@ const c = 30;
 
 ```
 ### 1.4.2 Temporal Dead Zone (TDZ): 
-let and const variables are not accessible before their declaration and accessing them will result in a ReferenceError.
+* let and const variables are not accessible before their declaration and accessing them will result in a ReferenceError.
 
 ``` js
 console.log(x); // Output: ReferenceError: Cannot access 'x' before initialization
@@ -80,7 +80,7 @@ const y = 20;
 
 ```
 ### 1.4.3 var does not throw errors for redeclaration: 
-Unlike let and const, var allows redeclaration within the same scope without throwing errors.
+* Unlike let and const, var allows redeclaration within the same scope without throwing errors.
 ```js
 var z = 10;
 var z = 20; // No error thrown
@@ -88,7 +88,7 @@ console.log(z); // Output: 20
 
 ```
 ### 1.4.4 const for objects and arrays does not make them immutable: 
-While const prevents reassignment of the variable itself, it does not make the object or array immutable. Properties of objects and elements of arrays can still be modified.
+* While const prevents reassignment of the variable itself, it does not make the object or array immutable. Properties of objects and elements of arrays can still be modified.
 ```js
 const person = { name: 'John' };
 person.name = 'Jane'; // This is allowed
@@ -99,8 +99,8 @@ numbers.push(4); // This is allowed
 console.log(numbers); // Output: [1, 2, 3, 4]
 ```
 ## 1.5 Summary
-var: Globally/function scoped, can be re-declared and updated.
+* var: Globally/function scoped, can be re-declared and updated.
 
-let: Block scoped, can be updated but not re-declared.
+* let: Block scoped, can be updated but not re-declared.
 
-const: Block scoped, cannot be updated or re-declared
+* const: Block scoped, cannot be updated or re-declared
