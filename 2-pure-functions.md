@@ -1,8 +1,8 @@
-## What is a Pure Function?
+## 2. What is a Pure Function?
 
 A pure function is a function that always returns the same output given the same input.
 
-### Key characteristics of pure functions:
+### 2.1  Key characteristics of pure functions:
 
 The return value solely depends on the input arguments.
 
@@ -10,7 +10,7 @@ It does not modify any non-local state (external variables or data).
 
 It does not produce any side effects, such as network requests, data mutation, or printing to the console.
 
-### Examples of Pure Functions:
+### 2.2 Examples of Pure Functions:
 ### Example 1:
 ### // Pure function: calculateGST always returns the same result for the same input
 ```js
@@ -33,7 +33,7 @@ console.log(calculateGST(15)); // Output: 18
 ```
 Here, calculateGST is not pure because it relies on the external variable tax.
 
-### Side Effects to Avoid:
+### 2.3 Side Effects to Avoid:
 To maintain purity, a function should avoid the following side effects:
 
 Making HTTP requests.
