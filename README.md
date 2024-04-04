@@ -7,3 +7,5 @@
 [3. What is prototype based inheritance?](https://github.com/Sai-Krishna1001/Javascript-Interview/blob/main/3-prototype-based-inheritance.md)
 
 [4. what is the use of nullish-coalescing operator?](https://github.com/Sai-Krishna1001/Javascript-Interview/blob/main/4-nullish-coalescing-operator-%3F%3F.md)
+
+[5. Difference between const and Object.freeze()](https://github.com/Sai-Krishna1001/Javascript-Interview/blob/main/5-diff-btw-const-freeze.md)
