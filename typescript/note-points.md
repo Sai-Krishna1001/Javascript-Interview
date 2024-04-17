@@ -23,4 +23,6 @@
 * **Abstract Classes**: Classes can be written in a way that allows them to be used as a base class for other classes without having to implement all the members. This is done by using the `abstract` keyword. Members that are left unimplemented also use the `abstract` keyword.
 * Abstract classes cannot be directly instantiated, as they do not have all their members implemented.
 * Generics allow creating 'type variables' which can be used to create classes, functions & type aliases that don't need to explicityly define the types that they use. Generics makes it easier to write reusable code.
+* `keyof` is a keyword in Typescript which is used to extract the key type from an object type.
+* Typescript can't always correctly infer a varibles/array type.
 * 
