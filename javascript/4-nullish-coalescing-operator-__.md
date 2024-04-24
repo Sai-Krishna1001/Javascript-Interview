@@ -22,6 +22,22 @@ console.log(displayName); // Output: "Guest"
 ### 4.4 Comparison with Logical OR (||):
 * The || operator returns the right-hand side operand if the left-hand side is falsy (including empty strings, 0, and false).
 
+  ```js
+  // Using the logical OR operator (||)
+  console.log(null || "default");        // "default"
+  console.log(undefined || "default");   // "default"
+  console.log("" || "default");          // "default"
+  console.log(0 || "default");           // "default"
+  console.log(false || "default");       // "default"
+  
+  // Using the null coalescing operator (??)
+  console.log(null ?? "default");        // "default"
+  console.log(undefined ?? "default");   // "default"
+  console.log("" ?? "default");          // ""
+  console.log(0 ?? "default");           // 0
+  console.log(false ?? "default");       // false
+  ```
+
 * The ?? operator only considers null or undefined as falsy values.
 ### 4.5 Summary:
 * The nullish coalescing operator is a handy addition to JavaScript for handling default values and ensuring that nullish values are properly handled.
