@@ -6,9 +6,10 @@
 ```js
 const nestedArray = [1, [2, [3, 4], 5], 6, [7, 8]];
 
-function flattenArray(arr) {
-    return arr.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val), []);
+function flattenArray(array) {
+    return array.reduce((acc, val) => acc.concat(Array.isArray(val) ? flattenArray(val) : val), []);
 }
+
 
 const flatArray = flattenArray(nestedArray);
 console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
