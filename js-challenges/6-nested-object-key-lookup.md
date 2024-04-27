@@ -51,4 +51,4 @@ console.log(name); // Output: "John"
 console.log(city); // Output: "Anytown"
 console.log(zipCode); // Output: undefined
 
-``
+```
