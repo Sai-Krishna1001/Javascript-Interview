@@ -15,18 +15,6 @@
 
 	class Rectangle {}
  
-### --> What is the Prototype Chain?
-
-In JavaScript, every object has an internal link to another object called its prototype.
-
-This prototype object itself can have its own prototype, forming a chain until an object with a null prototype is reached (which acts as the final link).
-
-By definition, null has no prototype.
-
-
-
--->Now in ES6, When you use class and extends keywords internally JavaScript will still use prototype-based inheritance. It just simplifies the syntax.
-
 -->Two principles with OOP in JS are:
 
 	Object Creation Pattern (Encapsulation)
@@ -40,3 +28,5 @@ By definition, null has no prototype.
 --> One of the most important things in object-oriented programming (OOP) is data encapsulation, which means to make private properties and then define public access methods to change these.
 
 -->With the `||` operator, we can return the first truthy operand. If all values are falsy, the last operand gets returned.
+
+--> With the `&&` operator, the right-hand value will be returned if the left-hand value is a truthy value.
