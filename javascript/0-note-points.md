@@ -39,3 +39,4 @@ By definition, null has no prototype.
 
 --> One of the most important things in object-oriented programming (OOP) is data encapsulation, which means to make private properties and then define public access methods to change these.
 
+-->With the `||` operator, we can return the first truthy operand. If all values are falsy, the last operand gets returned.
