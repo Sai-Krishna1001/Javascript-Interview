@@ -30,3 +30,7 @@
 -->With the `||` operator, we can return the first truthy operand. If all values are falsy, the last operand gets returned.
 
 --> With the `&&` operator, the right-hand value will be returned if the left-hand value is a truthy value.
+
+--> Primitive Data Types (string, number, boolean, undefined, null) are passed by value.
+
+--> Non-Primitive Data Types (object, array, function) are passed by reference.
