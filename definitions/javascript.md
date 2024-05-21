@@ -1,18 +1,40 @@
-## _Javascript Dictionary_
+## _JavaScript Dictionary_
 
-* __async__: async makes a function that returns a Promise.
-
- * __await__: await makes a function wait for a Promise.
-
-* __Asynchronous__: Functions running in parallel with other functions are called asynchronous (I will finsih later).
-
-* __Callback__: A callback is a function passed as an argument to another function (I will call back later).
-
-* __Closure__: A closure is a function having access to the parent scope, even after the parent function has closed.
-
-* __Hoisting__: Hoisting involves moving variable and function declarations to the top of their containing scope.
-
-* __Promise__: A Promise is an Object that links Producing code and Consuming code (I Promise a Result).
-
-  * _Producing code_ is code that can take some time.
-  * _Consuming code_ is code that must wait for the result.
+| Keyword                           | Definition                                                                                                                                                                  |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **__Arrow Function__**            | A shorthand syntax for writing function expressions, using `=>` to define functions.                                                                                         |
+| **__async__**               | `async` makes a function that returns a Promise.     |                                                    
+| **__Asynchronous__**              | Functions running in parallel with other functions are called asynchronous (I will finish later).                                                                           |
+| **__await__**                     | `await` makes a function wait for a Promise.                                                                                                                                |
+| **__Bind__**                      | `bind` creates a new function that, when called, has its `this` keyword set to the provided value.                                                                           |
+| **__Callback__**                  | A callback is a function passed as an argument to another function (I will call back later).                                                                                |
+| **__Class__**                     | `class` is a blueprint for creating objects with pre-defined properties and methods.                                                                                        |
+| **__Closure__**                   | A closure is a function having access to the parent scope, even after the parent function has closed.                                                                       |
+| **__Const__**                     | `const` declares a block scope local variable with a constant value.                                                                                                        |
+| **__Destructuring__**             | Destructuring is a syntax that makes it possible to unpack values from arrays or properties from objects into distinct variables.                                           |
+| **__Event Bubbling__**            | Event bubbling is a type of event propagation where the event starts at the target element and bubbles up to the containing elements.                                       |
+| **__Event Capturing__**           | Event capturing is a type of event propagation where the event starts from the outermost element and propagates to the target element.                                      |
+| **__Event Delegation__**          | Event delegation allows you to avoid adding event listeners to specific nodes, instead, the event listener is added to a parent element.                                    |
+| **__Event Loop__**                | The event loop is a process that continuously checks the call stack to see if there's any function that needs to run.                                                       |
+| **__Fetch API__**                 | The Fetch API provides an interface for fetching resources (including across the network).                                                                                 |
+| **__Function__**                  | A block of code designed to perform a particular task, executed when "called" or "invoked".                                                                                 |
+| **__Hoisting__**                  | Hoisting involves moving variable and function declarations to the top of their containing scope.                                                                           |
+| **__IIFE (Immediately Invoked Function Expression)__** | A function that runs as soon as it is defined.                                                                                                           |
+| **__JSON__**                      | JSON (JavaScript Object Notation) is a format for structuring data, often used for transferring data in web applications.                                                  |
+| **__Let__**                       | `let` declares a block scope local variable, optionally initializing it to a value.                                                                                         |
+| **__Local Storage__**             | Local storage is a type of web storage that allows JavaScript sites and apps to store and access data right in the browser with no expiration date.                        |
+| **__Map__**                       | A `Map` object holds key-value pairs and remembers the original insertion order of the keys.                                                                                |
+| **__Modules__**                   | JavaScript modules allow you to break up your code into separate files, which can then be imported as needed.                                                               |
+| **__NPM (Node Package Manager)__**| NPM is a package manager for JavaScript, and is the default package manager for Node.js, used to manage and share packages.                                                |
+| **__Object__**                    | An object is a collection of properties, and a property is an association between a name (or key) and a value.                                                              |
+| **__Promise__**                   | A Promise is an Object that links Producing code and Consuming code (I Promise a Result).                                                                                  |
+| **__Prototype__**                 | Prototypes are the mechanism by which JavaScript objects inherit features from one another.                                                                                |
+| **__Rest Parameter__**            | The rest parameter syntax (`...`) allows a function to accept an indefinite number of arguments as an array.                                                               |
+| **__Session Storage__**           | Session storage is similar to local storage, but its data is cleared when the page session ends.                                                                           |
+| **__Set__**                       | A `Set` object lets you store unique values of any type, whether primitive values or object references.                                                                    |
+| **__Spread Operator__**           | The spread operator (`...`) allows an iterable to expand in places where 0+ arguments are expected.                                                                        |
+| **__Template Literals__**         | Template literals are string literals allowing embedded expressions, using backticks (``) for multi-line strings and string interpolation.                                |
+| **__This__**                      | `this` refers to the object it belongs to.                                                                                                                                  |
+| **__Var__**                       | `var` declares a variable, optionally initializing it to a value.                                                                                                           |
+| **__WeakMap__**                   | A `WeakMap` is a collection of key/value pairs in which the keys are weakly referenced, allowing for garbage collection if there are no other references.                  |
+| **__WeakSet__**                   | A `WeakSet` is a collection of unique values, similar to a `Set`, but the values are weakly referenced.                                                                    |
