@@ -14,7 +14,7 @@ graph TD;
     D -->|Runs after every render if 'dependency' changes| C
 ```
 
-## Scenario 3: useEffect without Dependency Array
+## Scenario 3: `useEffect` without Dependency Array
 ```mermaid
 graph TD;
     K[Functional Component] --> L["useEffect(() => { /* effect code */ })"]
@@ -27,15 +27,4 @@ graph TD;
 graph TD;
     E[Functional Component] --> F["useEffect(() => { /* effect code */ return () => { /* cleanup code */ }; }, [])"]
     F -->|Runs right before the component is removed from the DOM| E
-```
-
-## Scenario 4: Multiple useEffect
-```mermaid
-graph TD;
-    G[Functional Component] --> H["useEffect(() => { /* effect code */ }, [])"]
-    H -->|Runs after the component is first rendered| G
-    G --> I["useEffect(() => { /* effect code */ }, [dependency])"]
-    I -->|Runs after every render if 'dependency' changes| G
-    G --> J["useEffect(() => { /* effect code */ return () => { /* cleanup code */ }; }, [])"]
-    J -->|Runs right before the component is removed from the DOM| G
 ```
