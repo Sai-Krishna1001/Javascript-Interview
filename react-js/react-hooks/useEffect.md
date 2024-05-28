@@ -1,3 +1,6 @@
+## What is `useEffect`
+`useEffect` is a hook in React that allows you to perform side effects in functional components. Side effects can include things like fetching data, subscribing to events, or manually changing the DOM.
+
 ## Scenario 1: Basic `useEffect`
 
 ```mermaid
