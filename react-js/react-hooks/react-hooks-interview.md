@@ -1,4 +1,4 @@
-# React Hooks Interview Discussion
+# 🎉 React Hooks Interview Discussion 🎉
 
 **Interviewer**: Good morning! Today, we'll be discussing React hooks, focusing on different scenarios. Let's start with an introduction.
 
@@ -38,7 +38,11 @@
 
 **Interviewer**: Excellent response! Lastly, could you discuss some best practices for optimizing the performance of React applications, especially when using hooks extensively?
 
-**Candidate**: Certainly! Some best practices include memoizing expensive computations or values using `useMemo` and `useCallback`, utilizing `React.memo` to prevent unnecessary re-renders, optimizing the dependency array in `useEffect`, and leveraging code splitting and lazy loading for improving initial load times. 🚀
+**Candidate**: Certainly! Some best practices include:
+- Memoizing expensive computations or values using `useMemo` and `useCallback`.
+- Utilizing `React.memo` to prevent unnecessary re-renders.
+- Optimizing the dependency array in `useEffect`.
+- Leveraging code splitting and lazy loading for improving initial load times. 🚀
 
 ---
 
@@ -53,3 +57,9 @@
 **Interviewer**: Thank you for your time today. We'll be in touch regarding the next steps in the interview process.
 
 **Candidate**: Thank you! I look forward to it. 😊
+
+---
+
+**Interviewer**: Have a great day! 🌟
+
+**Candidate**: You too! Cheers! 🥂
