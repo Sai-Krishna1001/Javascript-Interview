@@ -20,7 +20,7 @@ const Component1 = () => {
 };
 ```
 
-## Scenario 2: useMemo with Single Dependency
+## Scenario 2: `useMemo` with Single Dependency
 ```mermaid
 graph TD;
     C[Functional Component] --> D["useMemo(() => { /* computation */ }, [dependency])"]
@@ -39,7 +39,7 @@ const Component2 = ({ dependency }) => {
 };
 ```
 
-## Scenario 3: useMemo with Multiple Dependencies
+## Scenario 3: `useMemo` with Multiple Dependencies
 ```mermaid
 graph TD;
     E[Functional Component] --> F["useMemo(() => { /* computation */ }, [dep1, dep2])"]
@@ -57,7 +57,7 @@ const Component3 = ({ dep1, dep2 }) => {
     return <div>{memoizedValue}</div>;
 };
 ```
-## Scenario 4: useMemo for Expensive Computation
+## Scenario 4: `useMemo` for Expensive Computation
 ```mermaid
 graph TD;
     G[Functional Component] --> H["useMemo(() => { /* expensive computation */ }, [inputs])"]
@@ -76,7 +76,7 @@ const Component4 = ({ input1, input2 }) => {
 };
 ```
 
-## Scenario 5: useMemo to Avoid Unnecessary Re-renders
+## Scenario 5: `useMemo` to Avoid Unnecessary Re-renders
 ```mermaid
 graph TD;
     I[Functional Component] --> J["useMemo(() => { /* computed value */ }, [prop])"]
