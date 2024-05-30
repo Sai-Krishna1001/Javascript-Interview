@@ -34,3 +34,5 @@
 --> Primitive Data Types (string, number, boolean, undefined, null) are passed by value.
 
 --> Non-Primitive Data Types (object, array, function) are passed by reference.
+
+--> The `delete` operator is specifically designed to delete properties from objects, not variables or function declarations.
