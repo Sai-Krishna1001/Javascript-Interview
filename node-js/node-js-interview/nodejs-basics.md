@@ -136,6 +136,14 @@ graph TD;
     B --> E
     B --> F
 ```
+|                           | Client-Side (Browser)                              | Server-Side (Node.js/Server)                       |
+|---------------------------|----------------------------------------------------|---------------------------------------------------|
+| **Environment Location**   | Runs on the user's web browser.                   | Runs on the server.                               |
+| **Primary Languages**      | HTML, CSS, JavaScript.                            | JavaScript                                        |
+| **Document/ Window/ Navigator/ Event Objects** | Yes | No |
+| **Request/ Response/ Server/ Database Object** | No | Yes |
+| **Responsibilities**      | Handles UI display, interactions, and client-side logic. | Handles business logic, data storage/access, authentication, authorization, etc. |
+
 ## Sequence Diagram: Interaction Flow Between Client-Side and Server-Side with Frontend and Backend Frameworks
 ```mermaid
 sequenceDiagram
