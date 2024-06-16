@@ -1,6 +1,7 @@
 # Difference between `useCallback` and `useMemo`
 
-Both `useCallback` and `useMemo` are React hooks used for performance optimization, but they serve different purposes and have different use cases.
+- Both `useMemo` and `useCallback` are useful for performance optimization.
+useMemo will cache the result of the function between re-renders whereas useCallback will cache the function itself between re-renders.
 
 ## useCallback
 
