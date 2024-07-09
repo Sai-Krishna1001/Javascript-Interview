@@ -4,7 +4,7 @@
 - **Scenario:** Create a hypothetical interview scenario focusing on **[topic]**, highlighting a negative discussion between an interviewer and a candidate with **[x]** years of experience.
 
 ## Quiz-Based Approach
-- **Scenario:** Develop a quiz focusing on **[topic]**, including a series of challenging questions designed for a candidate with **5 years of experience**. Highlight potential misunderstandings and incorrect answers.
+- **Scenario:** Develop a quiz focusing on **[topic]**, including a series of challenging questions designed for a candidate with **5 years of experience**. Highlight with proper explanation.
 
 ## Team Discussion Scenario
 - **Scenario:** Create a hypothetical team discussion on **[topic]**. Highlight a negative dynamic between a candidate with **4 years of experience** and other team members, focusing on their approach to the discussion and proposed solutions.
