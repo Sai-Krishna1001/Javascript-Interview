@@ -55,4 +55,8 @@
 | **Explain Plan**        | A tool in MongoDB that provides insights into how queries are executed, helping users optimize query performance by showing the execution plan and indexing strategies used. |
 | **Transactions**        | A feature in MongoDB that allows for multi-document ACID transactions, ensuring that a series of operations either fully succeed or fully fail, providing consistency and reliability. |
 | **Write Concern**       | A setting in MongoDB that specifies the level of acknowledgment required from the database before considering a write operation successful, ranging from no acknowledgment to acknowledgment by the majority of nodes. |
-| **Read Preference**     | A setting in MongoDB that determines which replica set members to read from, allowing for control over
+| **Read Preference**     | A setting in MongoDB that determines which replica set members to read from, allowing for control over read operations, including options like primary, secondary, nearest, and custom settings. |
+| **Connection String**   | A URI format used to specify the connection details for a MongoDB instance, including hostname, port, database name, authentication credentials, and various connection options. |
+| **mongod**              | The MongoDB server daemon that handles data requests, manages data access, and performs background management operations. Running `mongod` starts the MongoDB server. |
+| **mongos**              | The routing service for sharding in MongoDB, responsible for directing queries to the appropriate shard and aggregating the results. Multiple `mongos` instances can be deployed for high availability. |
+| **oplog (Operations Log)** | A special capped collection in MongoDB that records all operations that modify data in the database, used by replica sets for data synchronization. The oplog can also be used for change data capture and real-time analytics. |
