@@ -28,3 +28,33 @@
 | **Request Blocking**            | Block specific requests to see how your site behaves without them.           | In DevTools > Network, right-click on a request and select "Block request URL".                                     |
 | **Quick Edits in Elements Panel**| Edit HTML and CSS directly in the Elements panel and see live changes.       | In DevTools > Elements, right-click on an element and select "Edit as HTML" or modify styles in the Styles pane.    |
 | **Audit with Lighthouse**       | Run performance and best practices audits directly from DevTools.            | In DevTools > Lighthouse, generate a report to analyze your site’s performance, accessibility, and SEO.            |
+
+
+# More JavaScript Console Hacks
+
+| Feature/Trick                      | Description                                                                 | Example/Usage                                                                                                      |
+|------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| **Edit and Re-execute Commands**   | Edit and re-run previous console commands.                                  | Press the up arrow key to bring up previous commands, edit them, and press Enter to re-execute.                   |
+| **Custom Error Messages**          | Throw custom errors with specific messages.                                 | `throw new Error('This is a custom error message');`                                                               |
+| **Use $_ for Last Result**         | Use `$_` to access the result of the last evaluated expression.             | `console.log($_);`                                                                                                 |
+| **Retrieve All Properties**        | List all properties of an object.                                           | `console.log(Object.getOwnPropertyNames(window));`                                                                 |
+| **Monitor Variables**              | Automatically log changes to variables.                                     | `let val = 0; setInterval(() => { console.log(val++); }, 1000);`                                                   |
+| **Inspect Functions**              | View the source code of a function directly in the console.                 | `console.log(myFunction.toString());`                                                                              |
+| **Format JSON Output**             | Pretty print JSON objects in the console.                                   | `console.log(JSON.stringify(object, null, 2));`                                                                    |
+| **Access Command Line API**        | Use the `$0` variable to reference the last selected DOM element in the Elements panel. | Select an element in the Elements panel and then use `$0` in the console to interact with it.                   |
+| **Track DOM Changes**              | Observe changes to a specific DOM element.                                  | `const observer = new MutationObserver(mutations => console.log(mutations)); observer.observe(document.body, { childList: true, subtree: true });` |
+| **Async Console Logging**          | Log messages asynchronously to avoid blocking the main thread.              | `setTimeout(() => console.log('Async message'), 0);`                                                               |
+| **Conditional Logging**            | Log messages only if a condition is true.                                   | `if (condition) console.log('Condition met!');`                                                                    |
+| **Chain Console Methods**          | Combine multiple console methods in a single line.                          | `console.log('Message').warn('Warning').error('Error');`                                                           |
+| **Monitor Specific Functions**     | Track when and how many times a function is called.                         | `monitor(functionName);`                                                                                           |
+| **Clear Console on Every Load**    | Automatically clear the console every time the page reloads.                | Add `console.clear();` at the top of your scripts.                                                                 |
+| **Use Debugging Methods**          | Use `console.debug()` for detailed debugging information.                   | `console.debug('Debug Info: ', obj);`                                                                              |
+| **Quick Access to Elements**       | Use `$0`, `$1`, `$2`, `$3`, `$4` to access the most recently inspected elements. | Select elements in the Elements panel and use `$0` to `$4` in the console to reference them.                     |
+| **Performance Marks and Measures** | Mark specific points in code for performance timing.                        | `performance.mark('start'); /* code */ performance.mark('end'); performance.measure('My Measure', 'start', 'end');`|
+| **View Network Requests**          | Log all network requests directly from the console.                         | `console.log(performance.getEntriesByType('resource'));`                                                           |
+| **Measure Code Execution**         | Measure the time taken by specific code to execute.                         | `console.time('TimerName'); /* code */ console.timeEnd('TimerName');`                                              |
+| **Check Event Listeners**          | Use `getEventListeners()` to list all event listeners attached to an element. | `console.log(getEventListeners(window));`                                                                         |
+| **Memory Snapshot**                | Take a snapshot of memory usage to analyze performance.                     | `console.profile('MemoryProfile'); /* code */ console.profileEnd('MemoryProfile');`                                |
+| **Trace Function Calls**           | Use `console.trace()` to log a stack trace of function calls.               | `console.trace('Trace Message');`                                                                                  |
+| **Observe Array Changes**          | Track changes to an array with `Proxy`.                                     | `const arr = new Proxy([], { set(target, property, value) { console.log('Set', property, value); target[property] = value; return true; }});` |
+
