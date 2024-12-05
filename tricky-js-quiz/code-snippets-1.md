@@ -53,14 +53,5 @@ console.log(+"abc"); // Output: NaN
 ```
 **Explanation:** The unary + operator converts its operand to a number.
 
-## 7. Dynamic Properties in Objects
-```js
-const key = 'dynamic';
-const obj = {
-  [key]: 'value',
-  ['hello' + 'World']: 42,
-};
-console.log(obj); // Output: { dynamic: 'value', helloWorld: 42 }
-```
-**Explanation:** Computed property names allow dynamic key creation.
+
 
